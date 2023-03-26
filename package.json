@@ -22,7 +22,9 @@
     "@commitlint/config-conventional": "17.4.4",
     "husky": "8.0.3",
     "lint-staged": "13.2.0",
-    "prettier": "2.8.7"
+    "prettier": "2.8.7",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.2"
   },
   "lint-staged": {
     "*.{js,ts,md,json,yaml}": "prettier --write"
