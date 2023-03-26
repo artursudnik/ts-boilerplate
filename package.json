@@ -14,7 +14,8 @@
     "prettier:check": "prettier -c .",
     "prettier:write": "prettier -w .",
     "lint": "eslint \"src/**/*.ts\"",
-    "build": "rimraf dist && tsc --project tsconfig.build.json"
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "@types/jest": "29.5.0",
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
+    "barrelsby": "2.5.1",
     "eslint": "8.36.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
