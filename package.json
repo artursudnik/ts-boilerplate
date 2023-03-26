@@ -2,6 +2,12 @@
   "name": "ts-boilerplate",
   "version": "0.0.1",
   "description": "",
+  "engineStrict": true,
+  "engines": {
+    "node": "18",
+    "npm": "use yarn",
+    "yarn": "1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
