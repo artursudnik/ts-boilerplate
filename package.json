@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "prettier:check": "prettier -c .",
-    "prettier:write": "prettier -w ."
+    "prettier:write": "prettier -w .",
+    "build": "rimraf dist && tsc"
   },
   "keywords": [],
   "author": "",
