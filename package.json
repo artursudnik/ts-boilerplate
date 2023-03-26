@@ -13,6 +13,7 @@
     "prepare": "husky install",
     "prettier:check": "prettier -c .",
     "prettier:write": "prettier -w .",
+    "lint": "eslint \"src/**/*.ts\"",
     "build": "rimraf dist && tsc --project tsconfig.build.json"
   },
   "keywords": [],
