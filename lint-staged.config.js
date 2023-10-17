@@ -1,3 +1,4 @@
 module.exports = {
-  '*.{js,ts,md,json,yaml,yml}': [`prettier -w`],
+  '*.{md,json,yaml,yml}': [`prettier -w`],
+  '*.{js,ts}': [`prettier -w`, 'eslint'],
 };
