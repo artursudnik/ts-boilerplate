@@ -41,9 +41,6 @@
     "ts-node": "10.9.1",
     "typescript": "5.2.2"
   },
-  "lint-staged": {
-    "*.{js,ts,md,json,yaml}": "prettier --write"
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
