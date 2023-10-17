@@ -15,6 +15,7 @@
     "prettier:write": "prettier -w .",
     "lint": "eslint \"src/**/*.ts\"",
     "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "check-types": "tsc --noEmit",
     "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src"
   },
   "keywords": [],
