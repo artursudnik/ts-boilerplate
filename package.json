@@ -37,7 +37,7 @@
     "lint-staged": "15.2.7",
     "organize-imports-cli": "0.10.0",
     "prettier": "3.3.2",
-    "prettier-plugin-organize-imports": "3.2.4",
+    "prettier-plugin-organize-imports": "4.0.0",
     "rimraf": "5.0.8",
     "ts-jest": "29.1.5",
     "ts-node": "10.9.2",
