@@ -25,7 +25,7 @@
     "@commitlint/cli": "19.4.1",
     "@commitlint/config-conventional": "19.4.1",
     "@types/jest": "29.5.12",
-    "@types/node": "20.16.2",
+    "@types/node": "20.16.5",
     "@typescript-eslint/eslint-plugin": "8.3.0",
     "@typescript-eslint/parser": "8.3.0",
     "barrelsby": "2.8.1",
