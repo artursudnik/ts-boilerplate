@@ -2,25 +2,24 @@
   "name": "ts-boilerplate",
   "version": "0.0.1",
   "description": "",
-  "engineStrict": true,
-  "engines": {
-    "node": "22",
-    "npm": "use yarn",
-    "yarn": "1"
-  },
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "scripts": {
-    "test": "jest",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "check-types": "tsc --noEmit",
+    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src",
+    "lint": "eslint \"src/**/*.ts\"",
     "prepare": "husky",
     "prettier:check": "prettier -c .",
     "prettier:write": "prettier -w .",
-    "lint": "eslint \"src/**/*.ts\"",
-    "build": "rimraf dist && tsc --project tsconfig.build.json",
-    "check-types": "tsc --noEmit",
-    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src"
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "19.7.1",
     "@commitlint/config-conventional": "19.7.1",
@@ -43,10 +42,11 @@
     "ts-node": "10.9.2",
     "typescript": "5.7.3"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+  "engines": {
+    "node": "22",
+    "npm": "use yarn",
+    "yarn": "1"
   },
-  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af"
+  "engineStrict": true
 }
