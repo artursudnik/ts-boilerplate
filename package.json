@@ -6,15 +6,15 @@
   "license": "ISC",
   "author": "",
   "scripts": {
-    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "build": "pnpm check-deps && rimraf dist && tsc --project tsconfig.build.json",
     "check-deps": "check-dependencies",
-    "check-types": "tsc --noEmit",
+    "check-types": "pnpm check-deps && tsc --noEmit",
     "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src",
-    "lint": "eslint \"src/**/*.ts\"",
+    "lint": "pnpm check-deps && eslint \"src/**/*.ts\"",
     "prepare": "husky",
-    "prettier:check": "prettier -c .",
-    "prettier:write": "prettier -w .",
-    "test": "jest"
+    "prettier:check": "pnpm check-deps && prettier -c .",
+    "prettier:write": "pnpm check-deps && prettier -w .",
+    "test": "pnpm check-deps && jest"
   },
   "commitlint": {
     "extends": [
