@@ -7,6 +7,7 @@
   "author": "",
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "check-deps": "check-dependencies",
     "check-types": "tsc --noEmit",
     "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src",
     "lint": "eslint \"src/**/*.ts\"",
