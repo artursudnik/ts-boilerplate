@@ -29,6 +29,9 @@ importers:
       barrelsby:
         specifier: 2.8.1
         version: 2.8.1
+      check-dependencies:
+        specifier: 2.0.0
+        version: 2.0.0
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -747,6 +750,11 @@ packages:
   char-regex@1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
+
+  check-dependencies@2.0.0:
+    resolution: {integrity: sha512-ui/u085SyYlRhaYShUDyS0fpTrfBBpz5bS0m+A1AW8HbsQefxrqLBKNzKAllIgdFZvKu0UHjrpzdobvGQ6khdg==}
+    engines: {node: '>=18.3'}
+    hasBin: true
 
   ci-info@3.9.0:
     resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
@@ -3223,6 +3231,11 @@ snapshots:
   chalk@5.4.1: {}
 
   char-regex@1.0.2: {}
+
+  check-dependencies@2.0.0:
+    dependencies:
+      picocolors: 1.1.1
+      semver: 7.7.1
 
   ci-info@3.9.0: {}
 
