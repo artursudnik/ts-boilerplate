@@ -10,7 +10,7 @@
     "check-deps": "check-dependencies",
     "check-types": "pnpm check-deps && tsc --noEmit",
     "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src",
-    "lint": "pnpm check-deps && eslint \"src/**/*.ts\"",
+    "lint": "pnpm check-deps && eslint_d \"src/**/*.ts\"",
     "prepare": "husky",
     "prettier:check": "pnpm check-deps && prettier -c .",
     "prettier:write": "pnpm check-deps && prettier -w .",
