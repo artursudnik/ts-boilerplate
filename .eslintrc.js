@@ -10,6 +10,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
   ],
   root: true,
   env: {
@@ -27,5 +29,15 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-explicit-any': 'error',
+    'import/order': [
+      'error',
+      {
+        named: true,
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
   },
 };
