@@ -9,7 +9,7 @@
     "build": "pnpm check-deps && rimraf dist && tsc --project tsconfig.build.json",
     "check-deps": "check-dependencies",
     "check-types": "pnpm check-deps && tsc --noEmit",
-    "generate-barrels": "barrelsby --delete --singleQuotes --location all --directory ./src",
+    "generate-barrels": "barrelsby --config barrelsby.config.json",
     "lint": "pnpm check-deps && eslint_d \"**/*.ts\"",
     "prepare": "husky",
     "prettier:check": "pnpm check-deps && prettier -c .",
