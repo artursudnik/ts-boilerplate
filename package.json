@@ -33,7 +33,7 @@
     "check-dependencies": "2.0.0",
     "eslint": "8.57.1",
     "eslint_d": "14.3.0",
-    "eslint-config-prettier": "10.1.5",
+    "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-prettier": "5.5.1",
     "husky": "9.1.7",
