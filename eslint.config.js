@@ -1,6 +1,7 @@
 const eslint = require('@eslint/js');
 const tsEslint = require('typescript-eslint');
 const prettier = require('eslint-config-prettier');
+const prettierPlugin = require('eslint-plugin-prettier');
 const importPlugin = require('eslint-plugin-import');
 
 module.exports = [
@@ -14,6 +15,7 @@ module.exports = [
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     plugins: {
       import: importPlugin,
+      prettier: prettierPlugin,
     },
     languageOptions: {
       parser: tsEslint.parser,
@@ -34,6 +36,7 @@ module.exports = [
       },
     },
     rules: {
+      'prettier/prettier': 'error',
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/no-unused-vars': [
         'error',
