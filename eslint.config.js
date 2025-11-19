@@ -46,6 +46,7 @@ module.exports = [
         },
       ],
       '@typescript-eslint/no-explicit-any': 'error',
+      '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
       'import/order': [
         'error',
         {
