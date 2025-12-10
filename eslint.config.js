@@ -48,6 +48,8 @@ module.exports = [
       ],
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
+      '@typescript-eslint/no-unsafe-return': 'error',
+      '@typescript-eslint/no-unsafe-assignment': 'error',
       'import/order': [
         'error',
         {
