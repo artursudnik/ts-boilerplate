@@ -5,5 +5,11 @@
   "schedule": ["before 9:00AM every saturday"],
   "automerge": true,
   "automergeType": "branch",
-  "lockFileMaintenance": { "enabled": true }
+  "lockFileMaintenance": { "enabled": true },
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "1 day"
+    }
+  ]
 }
