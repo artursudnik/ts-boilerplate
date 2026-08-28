@@ -6,16 +6,15 @@
   "license": "ISC",
   "author": "",
   "scripts": {
-    "build": "pnpm check-deps && rimraf dist && tsc --project tsconfig.build.json",
-    "check-deps": "check-dependencies",
-    "check-types": "pnpm check-deps && tsc --noEmit",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
+    "check-types": "tsc --noEmit",
     "generate-barrels": "barrelsby --config barrelsby.config.json",
-    "lint": "pnpm check-deps && eslint_d \"**/*.ts\"",
+    "lint": "eslint_d \"**/*.ts\"",
     "prepare": "husky",
-    "prettier:check": "pnpm check-deps && prettier -c .",
-    "prettier:write": "pnpm check-deps && prettier -w .",
-    "start:dev": "pnpm check-deps && pnpm tsx watch --clear-screen=false --include src src/index.ts",
-    "test": "pnpm check-deps && jest"
+    "prettier:check": "prettier -c .",
+    "prettier:write": "prettier -w .",
+    "start:dev": "pnpm tsx watch --clear-screen=false --include src src/index.ts",
+    "test": "jest"
   },
   "commitlint": {
     "extends": [
@@ -29,7 +28,6 @@
     "@types/jest": "30.0.0",
     "@types/node": "24.13.3",
     "barrelsby": "2.8.1",
-    "check-dependencies": "2.0.0",
     "eslint": "9.39.5",
     "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-typescript": "4.4.5",
