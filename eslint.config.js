@@ -2,7 +2,7 @@ const eslint = require('@eslint/js');
 const tsEslint = require('typescript-eslint');
 const prettier = require('eslint-config-prettier');
 const prettierPlugin = require('eslint-plugin-prettier');
-const importPlugin = require('eslint-plugin-import');
+const importPlugin = require('eslint-plugin-import-x');
 const globals = require('globals');
 
 module.exports = [
