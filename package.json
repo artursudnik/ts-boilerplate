@@ -10,6 +10,7 @@
     "check-types": "tsc --noEmit",
     "generate-barrels": "barrelsby --config barrelsby.config.json",
     "lint": "eslint_d \"**/*.ts\"",
+    "lint:ci": "eslint \"**/*.ts\"",
     "prepare": "husky",
     "prettier:check": "prettier -c .",
     "prettier:write": "prettier -w .",
