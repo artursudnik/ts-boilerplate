@@ -5,6 +5,7 @@
   "keywords": [],
   "license": "ISC",
   "author": "",
+  "type": "module",
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",
     "check-types": "tsc --noEmit",
