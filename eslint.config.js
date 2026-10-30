@@ -1,11 +1,11 @@
-const eslint = require('@eslint/js');
-const tsEslint = require('typescript-eslint');
-const prettier = require('eslint-config-prettier');
-const prettierPlugin = require('eslint-plugin-prettier');
-const importPlugin = require('eslint-plugin-import-x');
-const globals = require('globals');
+import eslint from '@eslint/js';
+import tsEslint from 'typescript-eslint';
+import prettier from 'eslint-config-prettier';
+import prettierPlugin from 'eslint-plugin-prettier';
+import importPlugin from 'eslint-plugin-import-x';
+import globals from 'globals';
 
-module.exports = [
+export default [
   {
     ignores: ['eslint.config.js', 'dist/**/*'],
   },
@@ -22,7 +22,7 @@ module.exports = [
       parser: tsEslint.parser,
       parserOptions: {
         project: './tsconfig.json',
-        tsconfigRootDir: __dirname,
+        tsconfigRootDir: import.meta.dirname,
         sourceType: 'module',
       },
       globals: {
