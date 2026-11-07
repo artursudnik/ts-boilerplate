@@ -200,11 +200,11 @@ importers:
         specifier: 5.5.7
         version: 5.5.7(eslint-config-prettier@10.1.8(eslint@10.14.0(jiti@2.7.0)(supports-color@10.2.2)))(eslint@10.14.0(jiti@2.7.0)(supports-color@10.2.2))(prettier@3.9.10)
       eslint_d:
-        specifier: 15.0.3
-        version: 15.0.3(jiti@2.7.0)
+        specifier: 15.1.0
+        version: 15.1.0(jiti@2.7.0)
       globals:
-        specifier: 17.13.0
-        version: 17.13.0
+        specifier: 17.14.0
+        version: 17.14.0
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -218,8 +218,8 @@ importers:
         specifier: 3.9.10
         version: 3.9.10
       prettier-plugin-packagejson:
-        specifier: 3.0.3
-        version: 3.0.3(prettier@3.9.10)
+        specifier: 3.1.0
+        version: 3.1.0(prettier@3.9.10)
       rimraf:
         specifier: 6.1.4
         version: 6.1.4
@@ -1586,8 +1586,8 @@ packages:
       jiti:
         optional: true
 
-  eslint_d@15.0.3:
-    resolution: {integrity: sha512-bCS3HTNhIZLTaOXmJ7Xp63itEfwGWjmHfZh5CtvCZ2Re4UVOSwSZTdvOiqMQ7ceXDGJDgty3HlL3fCfFH/Rl6g==}
+  eslint_d@15.1.0:
+    resolution: {integrity: sha512-zuNdHb1IqNA9GhUdSO0075okhkJnvNhy3jFXgdqIHdu83n3JTF/Gb00F95UFAhUECNlbP2Gj0Vt/pi/yp1mujA==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -1736,8 +1736,8 @@ packages:
     resolution: {integrity: sha512-1pgFdhK3J2LeM+dVf2Pd424yHx2ou338lC0ErNP2hPx4j8eW1Sp0XqSjNxtk6Tc4Kr5wlWtSvz8cn2yb7/SG/w==}
     engines: {node: '>=20'}
 
-  globals@17.13.0:
-    resolution: {integrity: sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg==}
+  globals@17.14.0:
+    resolution: {integrity: sha512-UtdkTVyAJePQv0J2M9Xe4L0ruNSDV314XiIJsADI2Zf40bcdAonE/D/OhAU8AT99oij9mhLByb+NvA3QWZYgCg==}
     engines: {node: '>=18'}
 
   graceful-fs@4.2.11:
@@ -2245,8 +2245,9 @@ packages:
     resolution: {integrity: sha512-SxToR7P8Y2lWmv/kTzVLC1t/GDI2WGjMwNhLLE9qtH8Q13C+aEmuRlzDst4Up4s0Wc8sF2M+J57iB3cMLqftfg==}
     engines: {node: '>=6.0.0'}
 
-  prettier-plugin-packagejson@3.0.3:
-    resolution: {integrity: sha512-qhxhcs3/ppNH8ZhFMbMnucE9VqITVn3Vvu/LF0jcWfVJqlgEo1c9eoiTr1WiaMIKbEEqQb4JTZ8MBZGtGRfAoQ==}
+  prettier-plugin-packagejson@3.1.0:
+    resolution: {integrity: sha512-KxH8E68UGYVW4IDxZk7lLXKxVd8uY6g8ctfu+fNwA+bAKgCN66ZoRIcPtOHXDa1kDj/nLBZIgH8srP/1Yaz9iA==}
+    engines: {node: '>=22'}
     peerDependencies:
       prettier: ^3
     peerDependenciesMeta:
@@ -4025,7 +4026,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint_d@15.0.3(jiti@2.7.0):
+  eslint_d@15.1.0(jiti@2.7.0):
     dependencies:
       debug: 4.4.3(supports-color@10.2.2)
       eslint: 10.14.0(jiti@2.7.0)(supports-color@10.2.2)
@@ -4177,7 +4178,7 @@ snapshots:
     dependencies:
       ini: 6.0.0
 
-  globals@17.13.0: {}
+  globals@17.14.0: {}
 
   graceful-fs@4.2.11: {}
 
@@ -4824,7 +4825,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-packagejson@3.0.3(prettier@3.9.10):
+  prettier-plugin-packagejson@3.1.0(prettier@3.9.10):
     dependencies:
       sort-package-json: 4.1.0
     optionalDependencies:
