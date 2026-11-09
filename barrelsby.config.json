@@ -2,5 +2,6 @@
   "directory": "./src/lib",
   "delete": true,
   "singleQuotes": true,
-  "location": "all"
+  "location": "all",
+  "exclude": ["\\.spec\\.ts$"]
 }
