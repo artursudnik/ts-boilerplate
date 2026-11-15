@@ -10,6 +10,11 @@
     {
       "matchDatasources": ["npm"],
       "minimumReleaseAge": "1 day"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ]
 }
